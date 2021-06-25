@@ -1,5 +1,8 @@
 ---
 import { Markdown } from 'astro/components';
+import { Example } from './Example';
+import { h } from "./h";
+
 ---
 <article>
     <div class="banner">
@@ -7,6 +10,8 @@ import { Markdown } from 'astro/components';
     </div>
 
     <section>
+        <Example />
+
         <Markdown>
             ## 🚀 Project Structure
 
@@ -32,13 +37,14 @@ import { Markdown } from 'astro/components';
 
             Any static assets, like images, can be placed in the `public/` directory.
         </Markdown>
+
     </section>
 
      <section>
         <h2>👀 Want to learn more?</h2>
         <p>Feel free to check <a href="https://github.com/snowpackjs/astro">our documentation</a> or jump into our <a href="https://astro.build/chat">Discord server</a>.</p>
     </section>
-    
+
 </article>
 
 <style>
