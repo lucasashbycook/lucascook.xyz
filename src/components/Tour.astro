@@ -10,7 +10,6 @@ import { h } from "./h";
     </div>
 
     <section>
-        <Example />
 
         <Markdown>
             ## 🚀 Project Structure
@@ -24,6 +23,7 @@ import { h } from "./h";
             │   └── favicon.ico
             ├── src/
             │   ├── components/
+            │   │   ├── Example.tsx
             │   │   └── Tour.astro
             │   └── pages/
             │       └── index.astro
@@ -33,14 +33,19 @@ import { h } from "./h";
             Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
             Each page is exposed as a route based on its file name.
 
-            There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+            Virtual State supports importing `.tsx` or `.jsx` files in the `src/components/` directory.\
+            Each component can be its own export in a module (`.tsx`/`.jsx`) file.
 
             Any static assets, like images, can be placed in the `public/` directory.
         </Markdown>
 
     </section>
 
-     <section>
+    <section>
+        <Example />
+    </section>
+
+    <section>
         <h2>👀 Want to learn more?</h2>
         <p>Feel free to check <a href="https://github.com/snowpackjs/astro">our documentation</a> or jump into our <a href="https://astro.build/chat">Discord server</a>.</p>
     </section>
