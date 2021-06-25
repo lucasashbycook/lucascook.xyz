@@ -1,0 +1,27 @@
+{
+  "name": "@astrojs/starter-kit",
+  "private": true,
+  "type": "module",
+  "license": "CC-0",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build"
+  },
+  "devDependencies": {
+    "astro": "^0.14.0"
+  },
+  "dependencies": {
+    "@virtualstate/astro-renderer": "^2.18.2",
+    "@virtualstate/dom": "^2.18.2",
+    "@virtualstate/examples": "^2.18.2",
+    "@virtualstate/fringe": "^2.18.2",
+    "@virtualstate/hooks": "^2.18.2",
+    "@virtualstate/hooks-extended": "^2.18.2",
+    "@virtualstate/union": "^2.18.2",
+    "@virtualstate/x": "^2.18.2",
+    "canvas": "^2.8.0",
+    "iterable": "^5.7.0",
+    "jsdom": "^16.6.0",
+    "microtask-collector": "^3.1.0"
+  }
+}
